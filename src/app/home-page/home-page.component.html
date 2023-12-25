@@ -33,10 +33,10 @@
       </div>
     </div>
     <div class="tp-hero-3__social-wrap d-none d-lg-inline-flex">
-      <a href="#">Facebook</a>
-      <a href="#">Twitter</a>
-      <a href="#">Dribble</a>
-      <a href="#">Instagram</a>
+      <a href="https://www.linkedin.com/in/tarun-gupta-345748227/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/WebxTechx/" target="_blank">Github</a>
+      <a href="https://www.instagram.com/thetarungupta/" target="_blank">Instagram</a>
+      <a href="https://www.behance.net/tarungupta47" target="_blank">Behance</a>
     </div>
     <a href="#service">
       <div class="tp-hero-3__scrool-down d-none d-lg-inline-flex">
@@ -78,7 +78,7 @@
             class="tp-hero-3__btn-box tp_wrap_anim d-flex align-items-center justify-content-start justify-content-md-center"
           >
             <div class="tp-btn-bounce-3">
-              <a class="tp-btn-blue" href="#">
+              <a class="tp-btn-blue" href="#projects">
                 <span class="text"> View Our Work</span>
                 <span class="icon">
                   <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -283,8 +283,10 @@
               </div>
             </div>
 
-            <div class="tp-service-3__btn-box">
-              <a href="contact.html">Call me to get more extra service <span>Call Now</span></a>
+            <div class="tp-service-3__btn-box" (click)="reload()">
+              <a [routerLink]="['contact']" routerLinkActive="router-link-active"
+                >Call me to get more extra service <span>Call Now</span></a
+              >
             </div>
           </div>
         </div>
@@ -294,7 +296,7 @@
   <!-- service area end -->
 
   <!-- project area start -->
-  <div class="tp-project-3__area p-relative black-bg-3 pt-110">
+  <div class="tp-project-3__area p-relative black-bg-3 pt-110" id="projects" #projects>
     <div class="container">
       <div class="row">
         <div class="col-xl-12">

@@ -37,4 +37,10 @@ export class HeaderComponent {
       this.HTMLHead[0]?.setAttribute('tp-theme', 'tp-theme-dark');
     }
   }
+
+  reload() {
+    setTimeout(() => {
+      window.location.reload();
+    }, 200);
+  }
 }

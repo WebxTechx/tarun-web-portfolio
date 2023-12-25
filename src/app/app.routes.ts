@@ -27,7 +27,7 @@ export const routes: Routes = [
     title: "Tarun's Portfolio",
   },
   {
-    path: 'portfolio-detail',
+    path: 'portfolio/portfolio-detail/:id',
     component: PortfolioDetailComponent,
     title: 'Portolfio',
   },
@@ -37,7 +37,7 @@ export const routes: Routes = [
     title: 'Blog',
   },
   {
-    path: 'blog-detail',
+    path: 'blog/blog-detail/:id',
     component: BlogDetailComponent,
     title: 'Blog',
   },

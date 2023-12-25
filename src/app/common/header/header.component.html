@@ -120,8 +120,8 @@
                 </span>
               </label>
             </div>
-            <div class="tp-header-3__btn d-none d-md-block">
-              <a class="tp-btn-white" href="contact.html">
+            <div class="tp-header-3__btn d-none d-md-block" (click)="reload()">
+              <a class="tp-btn-white" [routerLink]="['contact']" routerLinkActive="router-link-active">
                 <span class="text">Let’s Talk</span>
                 <span>
                   <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
