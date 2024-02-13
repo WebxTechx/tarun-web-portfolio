@@ -2,12 +2,10 @@ import { Routes } from '@angular/router';
 import { HomePageComponent } from './home-page/home-page.component';
 import { AboutPageComponent } from './about-page/about-page.component';
 import { PortfolioPageComponent } from './portfolio-page/portfolio-page.component';
-import { BlogPageComponent } from './blog-page/blog-page.component';
 import { MaintainceComponent } from './shared/maintaince/maintaince.component';
 import { NotFoundComponent } from './shared/not-found/not-found.component';
 import { ContactComponent } from './contact/contact.component';
 import { ServicePageComponent } from './service-page/service-page.component';
-import { BlogDetailComponent } from './blog-detail/blog-detail.component';
 import { PortfolioDetailComponent } from './portfolio-detail/portfolio-detail.component';
 
 export const routes: Routes = [
@@ -30,16 +28,6 @@ export const routes: Routes = [
     path: 'portfolio/portfolio-detail/:id',
     component: PortfolioDetailComponent,
     title: 'Portolfio',
-  },
-  {
-    path: 'blog',
-    component: BlogPageComponent,
-    title: 'Blog',
-  },
-  {
-    path: 'blog/blog-detail/:id',
-    component: BlogDetailComponent,
-    title: 'Blog',
   },
   {
     path: 'services',
